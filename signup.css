@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+body {
+    background: url(login\ gym.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow-y: hidden;
+}
+
+
+.sign-up-container {
+    height: 100vh;
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+
+}
+
+
+.sign-up-page {
+    width: 30vw;
+    height: 70vh;
+    backdrop-filter: blur(0px) saturate(160%);
+    box-shadow: 0 8px 32px 0 rgba(12, 12, 13, 0.37);
+    -webkit-backdrop-filter: blur(0px) saturate(160%);
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sign-up-page h2 {
+    font-size: 40px;
+    margin: 20px 0 10px 0;
+    color: rgb(176, 218, 255);
+    text-align: center;
+}
+
+
+.sign-up-page input {
+    width: 290px;
+    height: 40px;
+    padding-left: 10px;
+    border: 3px solid rgba(16, 16, 22, 0.69);
+    outline: none;
+    color: white;
+    background-color: rgba(100, 100, 111, 0.1);
+    border-radius: 10px;
+    transition: .1s;
+}
+
+.sign-up-page input:hover {
+    border: 3px solid rgb(10, 112, 255);
+}
+
+
+.sign-up-page label {
+    color: whitesmoke;
+}
+
+.input-box {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.sign-up-btn {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+#sign-up-button {
+    width: 92px;
+    height: 50px;
+    border-radius: 10px;
+    color: white;
+    background-color: rgba(100, 100, 111, 0.1);
+    border: 3px solid rgb(0, 94, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .8s;
+}
+
+#sign-up-button:hover {
+    background: linear-gradient(45deg, springgreen, rgb(0, 106, 255));
+
+}
+
+#sign-in-button {
+    width: 90px;
+    height: 45px;
+    border-radius: 10px;
+    color: white;
+    background-color: rgba(100, 100, 111, 0.1);
+    border: 3px solid rgb(0, 94, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .8s;
+}
+
+#sign-in-button:hover {
+    background: linear-gradient(45deg, springgreen, rgb(0, 106, 255));
+
+}

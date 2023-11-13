@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+</head>
+
+<body>
+    <main>
+        <div class="main-container">
+            <div class="login-form">
+                <div class="input-container">
+
+                    <h2>Login</h2>
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" placeholder="Email Address" autocomplete="off" required>
+                    <p id="email-error" style="color: red;"></p>
+
+                    <label for="password">Password</label>
+                    <input type="password" name="password" id="password" placeholder="Enter your Password" required>
+                    <p id="password-error" style="color: red;"></p>
+
+
+                    <a href="" class="forgot-pass">Forgot Password ?</a>
+                    <div class="login-btn">
+                        <button id="login-button" onclick="loginSubmit()">Login</button>
+                    </div>
+                    <a href="/signup.html" class="sign-up-link">Don't Have account ? <span>Sign up Here.</span></a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="login.js"></script>
+
+    <!-- //----------------------------Move to window --------------------------------// -->
+    <script>
+    function loginSubmit() {
+        let email = document.getElementById("email").value;
+        let password = document.getElementById("password").value;
+
+        let user_records = JSON.parse(localStorage.getItem("users")) || [];
+
+        let currentUser = user_records.find((v) => v.email === email && v.password === password);
+
+        if (currentUser) {
+            alert("Login Successful");
+            localStorage.setItem("email", currentUser.email);
+            localStorage.setItem("password", currentUser.password);
+            window.location.assign("index.html");
+        } else {
+            alert("Login Failed");
+        }
+    }
+
+    
+
+    </script>
+    
+
+</body>
+
+</html>

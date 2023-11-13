@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+body {
+    background: url(/login\ gym.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow-y: hidden;
+}
+
+.main-container {
+    height: 100vh;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-form {
+    width: 30vw;
+    height: 75vh;
+    backdrop-filter: blur(0px) saturate(160%);
+    /* box-shadow: 0 8px 32px 0 rgba(86, 86, 87, 0.37); */
+    -webkit-backdrop-filter: blur(0px) saturate(160%);
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 32px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.input-container h2 {
+    /* color: rgb(176, 218, 255);
+    margin-top: 30px;
+    text-align: center; */
+    font-size: 40px;
+    margin: 20px 0 0px 0;
+    color: rgb(176, 218, 255);
+    text-align: center;
+}
+
+.input-container input {
+    /* width: 290px;
+    height: 40px; 
+    color: white;
+    outline: none;
+    background-color: rgba(100, 100, 111, 0.1);
+    border: none;
+    border-radius: 10px;
+    padding-left: 10px; */
+    width: 290px;
+    height: 40px;
+    padding-left: 10px;
+    border: 3px solid rgba(16, 16, 22, 0.69);
+    outline: none;
+    color: white;
+    background-color: rgba(100, 100, 111, 0.1);
+    border-radius: 10px;
+    transition: .1s;
+
+}
+
+.input-container input:hover {
+    transition: .2s;
+    border: 3px solid rgb(10, 112, 255);
+}
+
+.input-container label {
+    color: whitesmoke;
+}
+
+.forgot-pass {
+    display: flex;
+    justify-content: end;
+    text-decoration: none;
+    color: white;
+    transition: .6s;
+}
+
+.forgot-pass:hover {
+    text-decoration: underline;
+}
+
+.login-btn {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+#login-button {
+    width: 90px;
+    height: 45px;
+    border-radius: 10px;
+    color: white;
+    background-color: rgba(100, 100, 111, 0.1);
+    text-decoration: none;
+    border: 3px solid rgb(0, 94, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .8s;
+
+}
+
+#login-button:hover {
+    background: linear-gradient(45deg, springgreen, rgb(0, 106, 255));
+}
+
+.sign-up-link {
+    color: wheat;
+    text-decoration: none;
+}
+
+.sign-up-link span {
+    color: whitesmoke;
+    font-weight: 500;
+}
+
+.sign-up-link span:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up Page</title>
+  <link rel="stylesheet" href="/signup.css">
+</head>
+
+<body>
+  <div class="sign-up-container">
+    <div class="sign-up-page">
+      <form>
+      <div class="input-box">
+          <h2>Sign Up</h2>
+          <label for="name">Full Name</label>
+          <input type="text" name="name" id="name" placeholder="Name" autocomplete="off" required>
+          <p id="name_error" style="color: red;"></p>
+  
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" placeholder="Email Address" autocomplete="off" required>
+          <p id="email_error" style="color: red;"></p>
+  
+          <label for="password">Password</label>
+          <input type="password" name="password" id="password" placeholder="Password" required>
+          <p id="password_error" style="color: red;"></p>
+  
+          <!-- <label for="confirm-password">Confirm Password</label>
+          <input type="password" name="confirm-password" id="confirm-password" placeholder="Confirm Password" required>
+          <p id="cpass_error" style="color: red;"></p> -->
+  
+  
+          <div class="sign-up-btn">
+            <button id="sign-up-button" onclick="saveData()">Sign Up</button>
+            <a id="sign-in-button" href="/login.html">Sign In</a>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <script src="/signup.js"></script>
+
+  <script>
+    function saveData(){
+
+      let name, email, password;
+      name=document.getElementById("name").value
+      email=document.getElementById("email").value
+      password=document.getElementById("password").value
+
+     //  localStorage.setItem("name",name);
+     //  localStorage.setItem("email",email);
+     //  localStorage.setItem("password",password);
+
+     let user_records = new Array();
+     user_records=JSON.parse(localStorage.getItem("users"))?JSON.parse(localStorage.getItem("users")):[]
+     if(user_records.some((v)=>{
+        return v.email==email
+     })){
+       alert("Email ID is already Used")
+     }
+     else{
+       alert("Your Details Saved")
+       user_records.push({
+         "name":name,
+         "email":email,
+         "password":password
+        })
+       localStorage.setItem("users",JSON.stringify(user_records));
+     }
+    }
+
+  
+
+
+  </script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal-Workout-Manager</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav>
+        <div class="nav-content">
+            <button id="logout">Logout</button>
+        </div>
+    </nav>
+    <main>
+        <div class="tracker">
+            
+
+
+                <div class="main-section">
+                    <h1>Workout Manager</h1>
+    
+                    <div class="exercise">
+                        <input type="text" name="exercise" id="exercise" placeholder="Exercise Name" class="input" autocomplete="off">
+                    </div>
+    
+                    <div class="sets">
+                        <input type="text" name="sets" id="sets" placeholder="Enter Sets ? " class="input"autocomplete="off">
+                    </div>
+                    <div class="reps">
+                        <input type="text" name="reps" id="reps" placeholder="How many reps ?" class="input"
+                            inputmode="numeric"autocomplete="off">
+                    </div>
+                    <button class="addworkoutbtn" id="addexercise" onclick="addExercise()" >Add
+                        Workout</button>
+    
+                    <ul id="list-container">
+    
+    
+                    </ul>
+                </div>
+            
+            <div class="toast-container" id="toast">Successfully added your workout</div>
+    </main>
+
+    <script src="index.js"></script>
+
+</body>
+
+</html>

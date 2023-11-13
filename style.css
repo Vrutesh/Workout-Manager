@@ -1,0 +1,343 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  background: url(/gym.jpg);
+  background-size: cover;
+}
+
+nav {
+  height: 90px;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  padding-right: 80px;
+}
+
+
+#logout {
+  width: 120px;
+  height: 50px;
+  border: 5em;
+  cursor: pointer;
+  outline: none;
+  font-size: 16px;
+  -webkit-transform: translate(0);
+  transform: translate(0);
+  background-image: linear-gradient(45deg, #2ea8f4, #12de48);
+  box-shadow: 0 12px 24px rgba(128, 128, 128, 0.1);
+  padding: 0.7em 2em;
+  border-radius: 65px;
+  box-shadow: 1px 1px 10px rgba(12, 255, 170, 0.438);
+  -webkit-transition: box-shadow 0.25s;
+  transition: box-shadow 0.25s;
+  color: white;
+}
+
+#logout:after {
+  content: "";
+  border-radius: 18px;
+  position: absolute;
+  margin: 4px;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+  background: #0e0e10;
+}
+
+#logout:hover {
+  box-shadow: 0 12px 24px rgba(4, 180, 255, 0.1);
+}
+
+
+
+
+
+/*----------------- main container starts here----------------- */
+
+
+
+.tracker {
+  padding-top: 40px;
+  display: flex;
+  justify-content: center;
+
+}
+
+.tracker h1 {
+  height: 90px;
+  color: white;
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.tracker h1::after {
+  content: "";
+  margin-top: 7px;
+  display: block;
+  height: 5px;
+  border-radius: 10px;
+  width: 30%;
+  background-color: springgreen;
+}
+
+.main-section {
+  width: 600px;
+  height: 340px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  /* background: linear-gradient(45deg, rgb(214, 227, 236), rgb(113, 252, 210)); */
+  /* background-color: rgb(91, 255, 173); */
+  backdrop-filter: blur(0px) saturate(160%);
+  box-shadow: 0 8px 32px 0 rgba(12, 12, 13, 0.37);
+  -webkit-backdrop-filter: blur(0px) saturate(160%);
+  background-color: rgba(14, 14, 15, 0.69);
+
+}
+
+/*----------------- main container ends here----------------- */
+
+
+
+
+/*----------------- input-box starts here----------------- */
+
+#exercise {
+  width: 300px;
+  height: 40px;
+  margin-right: 20px;
+  /* border: 2px solid #777; */
+  outline: none;
+  border-radius: 15px;
+  padding-left: 15px;
+}
+
+#sets {
+  width: 300px;
+  height: 40px;
+  margin-right: 20px;
+  outline: none;
+  /* border: 2px solid #777; */
+  border-radius: 15px;
+  padding-left: 15px;
+}
+
+
+
+#reps {
+  width: 300px;
+  height: 40px;
+  margin-right: 20px;
+  outline: none;
+  /* border: 2px solid #777; */
+  border-radius: 15px;
+  padding-left: 15px;
+}
+
+.input {
+  width: 300px;
+  height: 45px;
+  border-radius: 5px;
+  color: rgb(88, 246, 193);
+  font-size: 15px;
+  background-color: rgba(0, 0, 0, 0.1);
+
+}
+
+.input::placeholder {
+  color: rgb(224, 220, 220);
+  font-size: 15px;
+}
+
+.input:focus {
+  color: rgb(88, 246, 193);
+  background-color: transparent;
+  /* outline-color: rgb(0, 255, 136); */
+  /* box-shadow: -3px -3px 15px rgb(0, 255, 204); */
+  transition: .1s;
+  transition-property: box-shadow;
+}
+
+.input:hover {
+  border: 3px solid rgb(8, 249, 169);
+}
+
+/*----------------- input-box ends here----------------- */
+
+
+/*----------------- button starts here----------------- */
+
+
+.addworkoutbtn {
+  width: 160px;
+  height: 190px;
+  border: 5em;
+  cursor: pointer;
+  outline: none;
+  font-size: 16px;
+  -webkit-transform: translate(0);
+  transform: translate(0);
+  background-image: linear-gradient(45deg, #2ea8f4, #12de48);
+  padding: 0.7em 2em;
+  border-radius: 65px;
+  box-shadow: 1px 1px 10px rgba(12, 255, 170, 0.438);
+  -webkit-transition: box-shadow 0.25s;
+  transition: box-shadow 0.25s;
+  color: white;
+}
+
+.addworkoutbtn .text {
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-image: linear-gradient(45deg, #4568dc, #b06ab3);
+}
+
+.addworkoutbtn:after {
+  content: "";
+  border-radius: 18px;
+  position: absolute;
+  margin: 4px;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+  background: #0e0e10;
+}
+
+.addworkoutbtn:hover {
+  box-shadow: 0 12px 24px rgba(4, 180, 255, 0.1);
+}
+
+.addworkoutbtn:hover .text {
+  background-image: linear-gradient(-45deg, #4568dc, #b06ab3);
+}
+
+/*----------------- button ends here----------------- */
+
+
+
+
+/*----------------- ul li starts here----------------- */
+
+
+#list-container {
+  margin-top: 40px;
+  width: 540px;
+  border-radius: 20px;
+  right: 40px;
+  font-size: 30px;
+  gap: 10px;
+  color: white;
+  text-decoration: none;
+  backdrop-filter: blur(0px) saturate(160%);
+  box-shadow: 0 8px 32px 0 rgba(12, 12, 13, 0.37);
+  -webkit-backdrop-filter: blur(0px) saturate(160%);
+  background-color: rgba(14, 14, 15, 0.69);
+}
+
+#list-container ul li {
+  font-size: 10px;
+}
+
+ul li {
+  list-style: none;
+  padding-bottom: 40px;
+  position: relative;
+  left: 60px;
+  top: 20px;
+  bottom: 10px;
+  user-select: none;
+  font-size: 20px;
+  cursor: pointer;
+  color: springgreen;
+}
+
+ul li::before {
+  content: '';
+  position: absolute;
+  height: 28px;
+  width: 28px;
+  border-radius: 50%;
+  background-image: url(/images/unchecked.png);
+  background-size: cover;
+  background-position: center;
+  right: 550px;
+  word-spacing: 20px;
+
+
+}
+
+ul li.checked {
+  color: #c2c1c1;
+  text-decoration: line-through;
+}
+
+ul li.checked::before {
+  background-image: url(/images/check.png);
+  filter: saturate(1.2);
+
+}
+
+ul li span {
+  position: absolute;
+  right: 80px;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  width: 40px;
+  height: 30px;
+  background-color: rgba(0, 0, 0, 0.8);
+  font-size: 24px;
+  color: red;
+}
+
+#list-container p {
+  position: relative;
+  left: 80px;
+  top: 20px;
+  padding-bottom: 20px;
+  font-size: 28px;
+  color: springgreen;
+}
+
+
+
+
+
+/*----------------- ul li ends here----------------- */
+
+
+
+
+/*----------------- toast message starts here----------------- */
+
+
+.toast-container {
+  position: fixed;
+  top: 20px;
+  background-color: #ffffff;
+  color: rgb(7, 102, 255);
+  padding: 20px 20px;
+  border-radius: 12px;
+  border-left: 6px solid rgb(7, 102, 255);
+  display: none;
+}
+
+
+/*----------------- toast message ends here----------------- */
